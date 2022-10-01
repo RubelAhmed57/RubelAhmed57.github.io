@@ -89,9 +89,12 @@ Edge Node Design", <em>Warren B. Nelms Annual IoT Conference</em>, Dec 2019. (<a
     <br>-->
     <br>
     <footer>
-        <p class="footer-note">
-        This page was last updated on: May, 2020 
-        </p>
+        <p class="footer-note", id="demo"></p>
+
+		<script>
+		const date = new Date(document.lastModified);
+		document.getElementById("demo").innerHTML = date;
+		</script>
     </footer>
     </div>
     </div>

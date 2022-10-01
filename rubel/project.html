@@ -62,9 +62,12 @@
     <p><a href="./sulav_malla_files/code/MultiThreaded.zip">code</a></p>
     <br>
     <footer>
-        <p class="footer-note">
-        This page was last updated on: November 14, 2018 
-        </p>
+       <p class="footer-note", id="demo"></p>
+
+		<script>
+		const date = new Date(document.lastModified);
+		document.getElementById("demo").innerHTML = date;
+		</script>
     </footer>
     </div>
     </div>
