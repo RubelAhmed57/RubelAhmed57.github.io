@@ -98,16 +98,16 @@ a.navigation-link:hover, a.navigation-link:active {
 
 div.profile-pic {
     float: left;
-    height: 233px;
-    width: 230px;
+    height: 133px;
+    width: 130px;
     margin-top: 5px;
     margin-bottom: 8px;
     margin-right: 30px;
 }
 
 div.profile-pic > img {
-    height: 233px;
-    width: 235px;
+    height: 133px;
+    width: 135px;
     border-radius: 6px;
 }
 
