@@ -56,9 +56,125 @@
         </div>
 
         <div class="section-main">
-          <h2 id="research">Research Highlights</h2>
+          <!-- <h2 id="research">Research Highlights</h2> -->
 
-          <p><strong style="font-family: 'Arvo', serif;">Neuro-Symbolic AI for Autonomous Drones</strong><br>
+          <!-- Section 1: Developing Trustworthy Autonomous Systems -->
+          <section style="margin-bottom: 20px;">
+            <h2 style="font-family: 'Arvo', serif;">Developing Trustworthy Autonomous Systems through Neuro-Symbolic
+              Learning</h2>
+            <div style="overflow: hidden;">
+              <img src="./rubel_files/nsc.png" alt="Image related to Neuro-Symbolic AI"
+                style="float: right; margin: 10px; max-width: 50%; max-height: 100%;">
+              <p align="justify">
+                Our research leverages neuro-symbolic AI to enhance 3D scene representation in autonomous drones.
+                Traditional 3D computer vision methods, relying on dense point clouds, suffer from data inefficiency. We
+                propose a hybrid approach using the Universal Scene Description (USD) language, where 3D scenes are
+                represented by combining symbolic object models with neural-based background data.
+                <br><br>
+                We developed a Neuro-Symbolic Conversion (NSC) framework to automate this process. The NSC framework
+                identifies objects within point clouds, substitutes them with symbolic models, and verifies the
+                integrity
+                of these substitutions through visual comparison with the original scenes.
+                <br><br>
+                This method significantly improves data efficiency and accuracy in object identification and
+                substitution,
+                making it highly effective for tasks such as entity identification, activity recognition, and object
+                tracking in autonomous systems.
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 2: Machine Learning for EDA -->
+          <section style="margin-bottom: 20px;">
+            <h2 style="font-family: 'Arvo', serif;">Machine Learning for EDA</h2>
+            <div style="overflow: hidden;">
+              <img src="./rubel_files/ai_eda.png" alt="Image related to ML for EDA"
+                style="float: left; margin: 10px; max-width: 50%; max-height: 100%;">
+              <p align="justify">
+                High-Level Synthesis (HLS) is vital for converting high-level algorithmic descriptions into hardware
+                designs.
+                However, design space exploration (DSE) in reconfigurable systems presents a significant challenge due
+                to the
+                multi-objective optimization problem across conflicting parameters. Traditional methods, while
+                effective, can
+                be time-consuming and computationally expensive, often taking hours or days for even small designs.
+                <br><br>
+                To overcome these limitations, we developed an ML-based accelerator framework combining deep neural
+                networks
+                (DNN) and quantum machine learning (QML). This framework enhances DSE by introducing trail evaluation
+                and
+                pruning based on user-defined thresholds, reducing exploration time by discarding less promising
+                candidates
+                early. Additionally, it requires minimal training data, making it computationally efficient and
+                adaptable to
+                scenarios with scarce resources. The resulting models are lightweight and green, offering a faster, more
+                efficient design exploration process.
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 2a: Specification Mining -->
+          <section style="margin-bottom: 20px;">
+            <h3 style="font-family: 'Arvo', serif;">Specification Mining</h3>
+            <div style="overflow: hidden;">
+              <img src="./rubel_files/branch_flow.png" alt="Image related to Specification Mining"
+                style="float: right; margin: 10px; max-width: 50%; max-height: 100%;">
+              <p align="justify">
+                The electronic design automation (EDA) community acknowledges the necessity of specification in system
+                design
+                and verification. An efficient and reliable set of specifications is the first step toward an efficient
+                and
+                reliable digital design. The lack of good quality specifications can cause catastrophes in various
+                safety-critical and mission-critical architectures. Therefore, many endeavors have been carried out to
+                determine the correct specifications for reactive systems. Still, none of them obliterated the need for
+                further work in this domain. The advancement in ML algorithms has opened new research avenues for
+                specification mining.
+                <br><br>
+                We have developed a mining framework, <i>FlowMiner</i>, that can produce specifications for SoC
+                validation
+                based on the execution traces. In this framework, we have applied sequential rule mining with enhanced
+                scalability. In addition, we address the shortcomings of existing algorithms that fail to reduce search
+                space
+                which grows exponentially as the length of the rule increases. Moreover, besides mining, a large set of
+                rules
+                is often redundant and cannot be helpful in many cases. So we prune search space and reduce the number
+                of
+                specifications utilizing SAT tools and RNN/NLP techniques.
+              </p>
+            </div>
+          </section>
+
+          <!-- Section 2b: Machine Learning for HLS Acceleration -->
+          <section style="margin-bottom: 20px;">
+            <h3 style="font-family: 'Arvo', serif;">Machine Learning for HLS Acceleration</h3>
+            <div style="overflow: hidden;">
+              <img src="./rubel_files/hls_motivation.png" alt="Image related to ML for HLS Acceleration"
+                style="float: left; margin: 10px; max-width: 60%; max-height: 100%;">
+              <p align="justify">
+                High-Level Synthesis (HLS) is vital for converting high-level algorithmic descriptions into hardware
+                designs.
+                However, design space exploration (DSE) in reconfigurable systems presents a significant challenge due
+                to the
+                multi-objective optimization problem across conflicting parameters. Traditional methods, while
+                effective, can
+                be time-consuming and computationally expensive, often taking hours or days for even small designs.
+                <br><br>
+                To overcome these limitations, we developed an ML-based accelerator framework combining deep neural
+                networks
+                (DNN) and quantum machine learning (QML). This framework enhances DSE by introducing trail evaluation
+                and
+                pruning based on user-defined thresholds, reducing exploration time by discarding less promising
+                candidates
+                early. Additionally, it requires minimal training data, making it computationally efficient and
+                adaptable to
+                scenarios with scarce resources. The resulting models are lightweight and green, offering a faster, more
+                efficient design exploration process.
+              </p>
+            </div>
+          </section>
+
+
+          <!-- <p><strong style="font-family: 'Arvo', serif;">Neuro-Symbolic AI for Autonomous Drones</strong><br>
           <p align="justify">Our research leverages neuro-symbolic AI to enhance 3D scene representation in autonomous
             drones. Traditional 3D computer vision methods, relying on dense point clouds, suffer from data
             inefficiency. We propose a hybrid approach using the Universal Scene Description (USD) language, where 3D
@@ -105,10 +221,9 @@
             enhanced scalability. In addition, we address the shortcomings of existing algorithms that fail to reduce
             search space which grows exponentially as the length of the rule increases. Moreover, besides mining, a
             large set of rules is often redundant and cannot be helpful in many cases. So we prune search space and
-            reduce the number of specifications utilizing SAT tools and RNN/NLP techniques.</p>
+            reduce the number of specifications utilizing SAT tools and RNN/NLP techniques.</p> -->
 
-          <p>Visit our <a href="https://sees-usf.github.io/index.htm">lab page</a> to learn more about our research and
-            open positions.</p>
+
 
           <p>I try to follow: <a href="./rubel_files/EWD637.pdf" , target="_blank">The Three Golden Rules for Successful
               Scientific Research by Dijkstra</a></p>
@@ -117,20 +232,6 @@
           <p>Please visit my <a href="https://scholar.google.com/citations?user=bYb5WXEAAAAJ&hl=en" ,
               target="_blank">Google Scholar</a> and <a href="https://www.researchgate.net/profile/Md-Rubel-Ahmed-2" ,
               target="_blank">ResearchGate</a> pages for most recent publication and project updates.</p>
-          <!-- <p><strong style="font-family: 'Arvo', serif;">Journal</strong><br>
-      <ol>
-        <li style="margin: 10px 0;"><u>S. Malla</u> and K. Christensen, "A Survey on Power Management Techniques for Oversubscription of Multi-Tenant Data Centers," <em>ACM Computing Surveys</em> 52, 1, Article 1, February 2019. (<a href="./rubel_files/papers/CSUR_2018.pdf">PDF</a> | <a href="https://dl.acm.org/citation.cfm?id=3291049">Link</a>)</li>
-      </ol>
-    </p>
-    <p><strong style="font-family: 'Arvo', serif;">Conference</strong><br>
-      <ol>
-        <li style="margin: 10px 0;"><u>S. Malla</u> and K. Christensen, "Choosing the Best Server for a Data Center: The Importance of Workload Weighting," accepted to <em>IEEE International Performance Computing and Communications Conference</em>, November 2018. (<a href="./rubel_files/papers/IPCCC_2018.pdf">PDF</a>)</li>
-        <li style="margin: 10px 0;"><u>S. Malla</u>, A. Tuladhar, G. J. Quadri, and P. Rosen, "Multi-Spectral Satellite Image Analysis for Feature Identification and Change Detection VAST Challenge 2017: Honorable Mention for Good Facilitation of Single Image Analysis," <em>Proceedings of the IEEE Conference on Visual Analytics Science and Technology</em>, pp. 205-206, October 2017. (<a href="./rubel_files/papers/VAST2PageSummary.pdf">PDF</a> | <a href="https://ieeexplore.ieee.org/abstract/document/8585482">Link</a>)</li>
-        <li style="margin: 10px 0;">G. J. Quadri, A. Tuladhar, <u>S. Malla</u>, and P. Rosen, "Visual Analytic Design for Characterizing Air-Sampling Sensor Performance and Operation," <em>Proceedings of the IEEE Conference on Visual Analytics Science and Technology</em>, pp. 217-218, October 2017. (<a href="./rubel_files/papers/Quadri_MC2_VAST_2017.pdf">PDF</a> | <a href="https://ieeexplore.ieee.org/abstract/document/8585678">Link</a>)</li>
-        <li style="margin: 10px 0;">A. Tuladhar, <u>S. Malla</u>, G. J. Quadri, and P. Rosen, "Data Aggregation and Visualization Technique for Traffic Sensor Data," <em>Proceedings of the IEEE Conference on Visual Analytics Science and Technology</em>, pp. 239-240, October 2017. (<a href="./rubel_files/papers/Tuladhar_MC1_VAST_2017.pdf">PDF</a> | <a href="https://ieeexplore.ieee.org/abstract/document/8585568">Link</a>)</li>
-        <li style="margin: 10px 0;"><u>S. Malla</u> and K. Christensen, "Reducing Power Use and Enabling Oversubscription in Multi-Tenant Data Centers Using Local Price," <em>Proceedings of the IEEE International Conference on Autonomic Computing</em>, pp. 161-167, July 2017. (<a href="./rubel_files/papers/ICAC_2017.pdf">PDF</a> | <a href="https://ieeexplore.ieee.org/abstract/document/8005345">Link</a>)</li>
-      </ol>
-    </p> -->
           <h2 id="research">Posters</h2>
           <ol>
 
