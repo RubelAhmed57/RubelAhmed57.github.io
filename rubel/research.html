@@ -60,89 +60,132 @@
 
           <!-- Section 1: Developing Trustworthy Autonomous Systems -->
           <section style="margin-bottom: 20px;">
-            <h2 style="font-family: 'Arvo', serif;">Developing Trustworthy Autonomous Systems through Neuro-Symbolic
-              Learning</h2>
+            <h2 style="font-family: 'Arvo', serif;">Trustworthy Autonomous Systems via Neuro-Symbolic Learning</h2>
             <div style="overflow: hidden;">
               <img src="./rubel_files/nsc.png" alt="Image related to Neuro-Symbolic AI"
                 style="float: right; margin: 10px; max-width: 50%; max-height: 100%;">
               <p align="justify">
-                Our research leverages neuro-symbolic AI to enhance 3D scene representation in autonomous drones.
-                Traditional 3D computer vision methods, relying on dense point clouds, suffer from data inefficiency. We
-                propose a hybrid approach using the Universal Scene Description (USD) language, where 3D scenes are
-                represented by combining symbolic object models with neural-based background data.
+                The Assured Neuro-Symbolic Learning and Reasoning (ANSR) program aims to overcome the critical barriers
+                that have hindered the realization of AI in safety and mission-critical autonomous systems. DARPA
+                addresses two reasons
+                for this. <em>''First, data-driven ML lacks transparency, interpretability, and robustness and has
+                  unsustainable computational and data needs. Second, traditional approaches to building intelligent
+                  applications and autonomous systems that rely on knowledge representations and symbolic reasoning can
+                  be
+                  assured but are not robust to the uncertainties encountered in the real world.''</em>
+                Our research directly addresses these challenges by pioneering a novel neuro-symbolic AI framework that
+                enhances 3D
+                scene representation in autonomous drones, aligning with the core objectives of the ANSR initiative.
                 <br><br>
-                We developed a Neuro-Symbolic Conversion (NSC) framework to automate this process. The NSC framework
-                identifies objects within point clouds, substitutes them with symbolic models, and verifies the
-                integrity
-                of these substitutions through visual comparison with the original scenes.
+                Our research enhances 3D scene representation and reasoning in autonomous drones by leveraging
+                neuro-symbolic AI.
+                Traditional methods for 3D scene representation relying on dense point clouds are data-inefficient and
+                lack interpretability. We
+                address this by integrating symbolic object models using the Universal Scene
+                Description (USD) language. Our Neuro-Symbolic Conversion (NSC) framework automates object
+                identification within point clouds, substitutes them with symbolic models, and validates these
+                substitutions through visual comparison, improving data efficiency and reasoning for downstream
+                scenarios understanding tasks efficiency.
                 <br><br>
-                This method significantly improves data efficiency and accuracy in object identification and
-                substitution,
-                making it highly effective for tasks such as entity identification, activity recognition, and object
-                tracking in autonomous systems.
+                The attached image illustrates our innovative approach, where object-wise point-cloud generation and
+                symbolic representation in USD files create more interpretable and efficient 3D models. By matching
+                objects using metrics such as Mean Squared Error (MSE) and Structural Similarity Index (SSIM), we ensure
+                the accuracy and robustness of these symbolic models. This methodology significantly contributes to the
+                development of trustworthy autonomous systems, aligning with the objectives of the ANSR program. Our
+                research has been recognized and published in prestigious AI venues, including the AAAI Workshop and
+                ICAA, underscoring its impact in the field.
               </p>
             </div>
           </section>
 
           <!-- Section 2: Machine Learning for EDA -->
           <section style="margin-bottom: 20px;">
-            <h2 style="font-family: 'Arvo', serif;">Machine Learning for EDA</h2>
+            <h2 style="font-family: 'Arvo', serif;">Machine Learning for Electronic Design Automation</h2>
             <div style="overflow: hidden;">
               <img src="./rubel_files/ai_eda.png" alt="Image related to ML for EDA"
                 style="float: left; margin: 10px; max-width: 50%; max-height: 100%;">
               <p align="justify">
-                High-Level Synthesis (HLS) is vital for converting high-level algorithmic descriptions into hardware
-                designs.
-                However, design space exploration (DSE) in reconfigurable systems presents a significant challenge due
-                to the
-                multi-objective optimization problem across conflicting parameters. Traditional methods, while
-                effective, can
-                be time-consuming and computationally expensive, often taking hours or days for even small designs.
-                <br><br>
-                To overcome these limitations, we developed an ML-based accelerator framework combining deep neural
-                networks
-                (DNN) and quantum machine learning (QML). This framework enhances DSE by introducing trail evaluation
-                and
-                pruning based on user-defined thresholds, reducing exploration time by discarding less promising
-                candidates
-                early. Additionally, it requires minimal training data, making it computationally efficient and
-                adaptable to
-                scenarios with scarce resources. The resulting models are lightweight and green, offering a faster, more
-                efficient design exploration process.
+                The rapid evolution of semiconductor technology has propelled us into an era where System-on-Chip (SoC)
+                designs and chiplet-based architectures are becoming increasingly complex. As we approach for compute
+                advancement, the
+                sheer scale of on-chip communication protocols, coupled with the intricate web of RTL (Register Transfer
+                Level) blocks, presents unprecedented challenges in chip design. The growing sea of interconnected IP
+                (Intellectual Property) cores has deepened, with advanced SoCs averaging around 205 IP blocks [as of
+                2023], making
+                the design process more daunting than ever.
               </p>
+              <p align="justify">
+                To keep pace with these complexities, the integration of AI into the design
+                process has emerged as a crucial enabler. AI has the potential to revolutionize productivity, delivering
+                a 20-25% increase in silicon and software development efficiency. This shift is not just a necessity but
+                a strategic imperative for staying competitive in the semiconductor industry.
+              </p>
+              <p align="justify">Our research in electronic design automation (EDA) is motivated by the need to overcome
+                critical
+                bottlenecks in modern chip design. AI plays a pivotal role in this endeavor, providing semiconductor
+                designers with advanced tools that streamline the design process, enhance productivity, and reduce
+                costs—factors that are increasingly vital in an industry characterized by growing complexity and
+                financial pressures. We specifically address two major challenges in EDA. The first is the mining of
+                message flow specifications, which is crucial for identifying and resolving communication protocol bugs
+                in complex SoC designs. The second challenge involves optimizing design space
+                exploration to mitigate bottlenecks in High-Level Synthesis (HLS) implementation. These efforts are
+                aimed at advancing the efficiency and reliability of chip design in the current technological landscape.
+              </p>
+
             </div>
           </section>
 
           <!-- Section 2a: Specification Mining -->
           <section style="margin-bottom: 20px;">
             <h3 style="font-family: 'Arvo', serif;">Specification Mining</h3>
-            <div style="overflow: hidden;">
-              <img src="./rubel_files/branch_flow.png" alt="Image related to Specification Mining"
-                style="float: right; margin: 10px; max-width: 50%; max-height: 100%;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+              <!-- First Figure -->
+              <figure
+                style="flex: 1; margin-right: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+                <img src="./rubel_files/combined_image_resized.png" alt="Image related to Specification Mining"
+                  style="max-width: 120%; max-height: 600px; object-fit: contain;">
+                <figcaption style="font-style: italic; text-align: center; margin-top: 5px;">Sample messages, flows and
+                  multi-core shared cache SoC.
+                </figcaption>
+              </figure>
+              <!-- Second Figure -->
+              <figure
+                style="flex: 1; margin-left: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100%;">
+                <img src="./rubel_files/branch_flow.png" alt="Second Image related to Specification Mining"
+                  style="max-width: 62%; max-height: 300px; object-fit: contain;">
+                <figcaption style="font-style: italic; text-align: center; margin-top: 5px;">Complex braching in the
+                  flow graph.
+                </figcaption>
+              </figure>
+            </div>
+            <div style="margin-top: 5px;">
               <p align="justify">
                 The electronic design automation (EDA) community acknowledges the necessity of specification in system
-                design
-                and verification. An efficient and reliable set of specifications is the first step toward an efficient
-                and
-                reliable digital design. The lack of good quality specifications can cause catastrophes in various
-                safety-critical and mission-critical architectures. Therefore, many endeavors have been carried out to
-                determine the correct specifications for reactive systems. Still, none of them obliterated the need for
-                further work in this domain. The advancement in ML algorithms has opened new research avenues for
+                design and verification. An efficient and reliable set of specifications is the first step toward an
+                efficient and reliable digital design. The lack of good quality specifications can cause catastrophes in
+                various safety-critical and mission-critical architectures. Therefore, many endeavors have been carried
+                out
+                to determine the correct specifications for reactive systems. Still, none of them obliterated the need
+                for
+                further work in this domain. The advancement in ML algorithms specifically in the area of data mining
+                and large language models (LLM) has opened new research avenues for
                 specification mining.
                 <br><br>
-                We have developed a mining framework, <i>FlowMiner</i>, that can produce specifications for SoC
-                validation
-                based on the execution traces. In this framework, we have applied sequential rule mining with enhanced
-                scalability. In addition, we address the shortcomings of existing algorithms that fail to reduce search
-                space
-                which grows exponentially as the length of the rule increases. Moreover, besides mining, a large set of
-                rules
-                is often redundant and cannot be helpful in many cases. So we prune search space and reduce the number
-                of
-                specifications utilizing SAT tools and RNN/NLP techniques.
+                Our contributions in the area of specification mining for SoC post-silicon validation are significant
+                and ongoing. We initially developed a sequential pattern mining framework to generate specifications
+                based on execution traces. Recognizing the limitations of this approach, particularly in handling the
+                exponentially growing search space, we enhanced our methodology by incorporating SAT solver-based trace
+                modeling. Additionally, we advanced this work through language modeling using BERT, applying large
+                language models (LLMs) to further improve the accuracy and efficiency of our specifications. This
+                remains an active area of research within our group. Our findings have been published in prestigious
+                conferences such as TCAD (transaction), ICCD, ISQED, and MWSCAS.
               </p>
+
             </div>
           </section>
+
+
+
 
           <!-- Section 2b: Machine Learning for HLS Acceleration -->
           <section style="margin-bottom: 20px;">
@@ -152,24 +195,29 @@
                 style="float: left; margin: 10px; max-width: 60%; max-height: 100%;">
               <p align="justify">
                 High-Level Synthesis (HLS) is vital for converting high-level algorithmic descriptions into hardware
-                designs.
-                However, design space exploration (DSE) in reconfigurable systems presents a significant challenge due
-                to the
-                multi-objective optimization problem across conflicting parameters. Traditional methods, while
-                effective, can
-                be time-consuming and computationally expensive, often taking hours or days for even small designs.
-                <br><br>
-                To overcome these limitations, we developed an ML-based accelerator framework combining deep neural
-                networks
-                (DNN) and quantum machine learning (QML). This framework enhances DSE by introducing trail evaluation
-                and
-                pruning based on user-defined thresholds, reducing exploration time by discarding less promising
-                candidates
-                early. Additionally, it requires minimal training data, making it computationally efficient and
-                adaptable to
-                scenarios with scarce resources. The resulting models are lightweight and green, offering a faster, more
-                efficient design exploration process.
+                designs. However, design space exploration (DSE) in reconfigurable systems presents a significant
+                challenge due to the multi-objective optimization problem across conflicting parameters. Traditional
+                methods, while effective, can be time-consuming and computationally expensive, often taking hours or
+                days for even small designs.
               </p>
+              <p align="justify">
+                To overcome these limitations, we developed an ML-based accelerator framework that combines deep neural
+                networks (DNN) and quantum machine learning (QML). This framework enhances DSE by introducing trail
+                evaluation and pruning based on user-defined thresholds, reducing exploration time by discarding less
+                promising candidates early. Additionally, it requires minimal training data, making it computationally
+                efficient and adaptable to scenarios with scarce resources. The resulting models are lightweight and
+                green, offering a faster, more efficient design exploration process.
+              </p>
+              <p align="justify">
+                We are actively working to improve SoC/FPGA design, with a focus on creating compact, energy-efficient
+                designs. The design space exploration challenge, as illustrated in the attached image, highlights the
+                importance of proper usage of pragma and design parameters. These factors enable customization of the
+                design for both speed and energy efficiency. This project is part of our broader Green AI Design
+                initiative, where we explore various optimization strategies to develop AI solutions that are not only
+                effective but also energy-efficient. Our work has been published in various conferences within the CAS
+                community.
+              </p>
+
             </div>
           </section>
 
@@ -223,10 +271,18 @@
             large set of rules is often redundant and cannot be helpful in many cases. So we prune search space and
             reduce the number of specifications utilizing SAT tools and RNN/NLP techniques.</p> -->
 
+          <p align="justify">
+            In the pursuit of knowledge, research is not just a methodical process but a journey of intellectual
+            curiosity, rigor, and perseverance. Every research endeavor is a step towards uncovering truths, challenging
+            assumptions, and contributing to the collective understanding of our world. It is driven by a commitment to
+            uphold the principles of integrity, critical thinking, and continuous learning.
+            As I navigate this journey, I strive to adhere to the guiding principles that have shaped the work of many
+            great scientists before me.
+            I try to follow: <a href="./rubel_files/EWD637.pdf" target="_blank">The Three Golden Rules for Successful
+              Scientific Research by Dijkstra</a>.
+          </p>
 
 
-          <p>I try to follow: <a href="./rubel_files/EWD637.pdf" , target="_blank">The Three Golden Rules for Successful
-              Scientific Research by Dijkstra</a></p>
           <br>
           <h2 id="publications">Publications</h2>
           <p>Please visit my <a href="https://scholar.google.com/citations?user=bYb5WXEAAAAJ&hl=en" ,
