@@ -152,12 +152,24 @@ p.my-name {
 
 
 /* This is for the footer section */
+/*footer {
+    background-color: #00397a;
+    box-shadow: 0 2px 1px rgba(0,0,0,0.15);
+    text-align: center;
+    border-radius: 6px;
+}*/
+
 footer {
     background-color: #00397a;
     box-shadow: 0 2px 1px rgba(0,0,0,0.15);
     text-align: center;
     border-radius: 6px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    /* padding: 10px 0; */
 }
+
 
 p.footer-note {
     color: #FFFFFF;
