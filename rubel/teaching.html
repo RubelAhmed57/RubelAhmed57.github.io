@@ -27,26 +27,27 @@
       font-family: Roboto;
     }
 
-    /* Style the tab */
     .tab {
-      overflow: hidden;
-      border: 1px solid #ccc;
-      background-color: #f1f1f1;
-    }
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
 
-    /* Style the buttons inside the tab */
-    .tab button {
-      background-color: inherit;
-      float: left;
-      border: 1px solid #ccc;
-      outline: none;
-      cursor: pointer;
-      padding: 14px 16px;
-      transition: 0.3s;
-      font-size: 30px;
-      font-family: Roboto;
-      font-weight: bold;
-    }
+.tab button {
+    flex: 1;
+    background-color: inherit;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 30px;
+    font-family: Roboto;
+    font-weight: bold;
+    text-align: center;
+}
 
     /* Change background color of buttons on hover */
     .tab button:hover {
@@ -93,42 +94,12 @@
     </header>
     <div class="content-body">
       <div class="content-body-shading">
-        <div class="profile-pic">
-          <img src="../rubel/rubel_files/cv_photo.jpg" alt="Rubel Ahmed">
-        </div>
-        <div class="section-name-contact">
-          <p class="my-name"><b><a href="../index.html" class="my-name-header">Md Rubel Ahmed</a></b></p>
-          <i>Assistant Professor of Computer Science,<br>Louisiana Tech University</i>
-          <!-- <i>Courtesy Postdoctoral Researcher @UF</i><br>
-          <i>Postdoc @UCF for Assured Neuro-Symbolic Learning and Reasoning (ANSR)</i> -->
-          <br>
-          <p>Email: mahmed@latech.edu</p>
-          <p>
-            <a href="./rubel_files/Resume.pdf" target="_blank"><i class="ai ai-cv-square ai-2x"></i></a>
-            <a href="https://www.linkedin.com/in/rubel-ahmed/" target="_blank"><i class="fa fa-linkedin-square"
-                style="font-size:34px"></i></a>
-            <a href="https://github.com/RubelAhmed57" target="_blank"><i class="fa fa-github"
-                style="font-size:34px"></i></a>
-            <a href="https://scholar.google.com/citations?user=bYb5WXEAAAAJ&hl=en" target="_blank"><i
-                class="ai ai-google-scholar-square ai-2x"></i></a>
-          </p>
-          <br>
-          <!-- <a href="mailto: mdrurbelahmed@usf.edu">Email</a> |
-      <a href="./rubel_files/Resume.pdf", target="_blank">Resume</a> | 
-      <a href="https://www.linkedin.com/in/rubel-ahmed/", target="_blank">LinkedIn</a> | 
-      <a href="https://github.com/RubelAhmed57", target="_blank">github</a> | 
-      <a href="https://scholar.google.com/citations?user=bYb5WXEAAAAJ&hl=en", target="_blank">Google Scholar</a> </p><br> -->
-
-        </div>
-
         <div class="section-main">
 
           <div class="tab">
             <button class="tablinks" onclick="openCity(event, 'London')">Experience</button>
             <button class="tablinks" onclick="openCity(event, 'Paris')">Teaching Philosophy</button>
             <button class="tablinks" onclick="openCity(event, 'Boston')">Teaching Narrative</button>
-            <button class="tablinks" onclick="openCity(event, '#')">Demo Class</button>
-            <button class="tablinks" onclick="openCity(event, 'Dhaka')">CV</button>
           </div>
 
           <div id="London" class="tabcontent" style="display:block">
@@ -369,35 +340,7 @@
 
           </div>
 
-          <div id="Tokyo" class="tabcontent">
 
-            <p>Video of Microteaching assignment for the course: <i> <b>Preparing for College Teaching</b></i></p>
-
-            <video width="940" height="670" controls>
-              <source src="rubel_files/teaching/demo_class.mp4" type="video/mp4">
-              Your browser does not support the video type.
-            </video>
-            <br><br>
-
-            <p> A short recording from my class delivered in summer 2022: <i> <b>CDA4502 Computer Architecture
-                </b></i>(watch on
-              <a href="https://www.youtube.com/watch?v=TUuZMpFqHxU&t=18s" , target="_blank">youtube</a> if not loaded
-              already.)
-            </p>
-            <iframe width="940" height="470" src="https://www.youtube.com/watch?v=TUuZMpFqHxU&t=18s">
-            </iframe>
-
-            <br>
-            <br>
-          </div>
-
-          <div id="Dhaka" class="tabcontent">
-            <iframe src="./rubel_files/Resume.pdf" width="100%" height="1500px">
-            </iframe>
-            <br>
-            <br>
-            <br><br><br>
-          </div>
 
         </div>
 
