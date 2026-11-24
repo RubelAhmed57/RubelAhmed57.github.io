@@ -1,7 +1,13 @@
-/* Academic Website Stylesheet */
+
+/* =========================================
+   Academic Website Stylesheet
+   Fonts: Lato + Merriweather
+   ========================================= */
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
 
 /* General Design */
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Merriweather', serif;
     margin: 0;
@@ -24,6 +30,7 @@ p, ul, ol {
 }
 
 /* Tables */
+
 th, td {
     font-family: 'Lato', sans-serif;
     vertical-align: top;
@@ -31,6 +38,7 @@ th, td {
 }
 
 /* General Containers */
+
 div {
     display: block;
     margin: 0;
@@ -38,6 +46,7 @@ div {
 }
 
 /* Links */
+
 a {
     color: #3C73FD;
     text-decoration: none;
@@ -59,11 +68,15 @@ a:active {
 }
 
 /* Section Headings */
+
 h2, h3, h4 {
     border-bottom: 1px solid #ccc;
 }
 
-/* Header and Navigation */
+/* =========================================
+   Header and Navigation
+   ========================================= */
+
 header {
     min-height: 50px;
     width: 100%;
@@ -93,7 +106,10 @@ a.navigation-link:active {
     opacity: 0.8;
 }
 
-/* Profile Picture and Contact Information */
+/* =========================================
+   Profile Picture and Contact Information
+   ========================================= */
+
 div.profile-pic {
     float: left;
     height: 133px;
@@ -125,19 +141,27 @@ div.section-name-contact {
 }
 
 p.my-name {
-    margin: 5px 0;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
     font-family: 'Merriweather', serif;
     font-size: 2em;
     line-height: 1.4;
 }
 
-/* Main Content */
+/* =========================================
+   Main Content
+   ========================================= */
+
 .section-main {
     clear: both;
     padding-top: 15px;
 }
 
-/* Teaching Page Tabs, retained for compatibility */
+/* =========================================
+   Teaching Page Tabs
+   ========================================= */
+
 .tab {
     display: flex;
     width: 100%;
@@ -179,7 +203,10 @@ p.my-name {
     line-height: 1.7;
 }
 
-/* Footer */
+/* =========================================
+   Footer
+   ========================================= */
+
 footer {
     background-color: #00397a;
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.15);
@@ -196,7 +223,10 @@ p.footer-note {
     padding: 5px;
 }
 
-/* Responsive Layout */
+/* =========================================
+   Responsive Layout
+   ========================================= */
+
 @media (min-width: 768px) {
     .content-body {
         width: 750px;
